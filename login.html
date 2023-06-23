@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-8">
+          <div class="logo">
+            <a href="" title="">
+              <img src="img/Logo_TheHub.png" alt="" class="w-100">
+            </a>
+          </div>
+          <div class="banner_text">
+            <img src="img/Title_Text.png" alt="" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-4 log_in">
+          <h4>LOGIN</h4>
+          <div class="username">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter your username">
+          </div>
+          <div class="password">
+            <p>Password</p>
+            <input type="Password" name="" placeholder="Enter your password" value="" id="typepass">
+            <img src="img/Icon_ShowPwd.png" alt="" onclick="Toggle()">
+          </div>
+          <p class="forgot_pw">Forgot password?</p>
+          <div class="last_button">
+            <div class="img1">
+              <a href="" title="">
+                <img src="img/Btn_Back.png" alt="" class="w-100">
+              </a>
+            </div>
+            <div class="img1">
+              <a href="" title="">
+                <img src="img/Btn_Next.png" alt="" class="w-100">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script> 
+    function Toggle() { 
+      var temp = document.getElementById("typepass"); 
+      if (temp.type === "password") { 
+        temp.type = "text"; 
+      } 
+      else { 
+        temp.type = "password"; 
+      } 
+    } 
+  </script> 
+</body>
